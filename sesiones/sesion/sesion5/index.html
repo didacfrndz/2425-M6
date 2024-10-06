@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1{
+            background-color: red;
+        }
+        .alerta{
+            color: red;
+        }
+        .textoGrande{
+            font-size: 50px;
+        }
+        .borde{
+            border: 2px solid red;
+        }
+        .cuadrado{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilos, clases y atributos del DOM</h1>
+    <p id="p1" style="background-color: red;">Color de fondo</p>
+    <p id="p2" title="title de Parrafo" class="alerta textoGrande">Parrafo con clases</p>
+    <div>
+        <div class="cuadrado">1</div>
+        <div class="cuadrado">2</div>
+        <div class="cuadrado">3</div>
+    </div>
+    
+    
+    
+    
+    <script>
+        document.querySelector("#p1").style.backgroundColor = "blue";
+        //Para modificar el estilo debes escribirlo con camelCase
+        document.querySelector("#p1").style.display= "block";
+        //ocultar elemento
+        console,console.log(document.querySelector("#p2").classList.add("borde"));
+        console,console.log(document.querySelector("#p2").classList.remove("alerta"));
+        //ver/añadir y modificar atributos 
+         const title = document.querySelector("#p2");
+         console.log('title de p2 ', title.getAttribute("title"));
+         title.setAttribute("title", "title modificado")
+         console.log("nuevo title", title.getAttribute("title"));
+        const cuadrado = document.querySelector(".cuadrado");
+        console.log(cuadrado.innerHTML);
+        const cuadrados = document.querySelectorAll(".cuadrado");
+        document.querySelectorAll(".cuadrado");
+        console.log("cuadrados", cuadrados);
+        console.log("cuadrados", cuadrados[1].innerHTML);
+        cuadrados[2].classList.add("borde");
+        
+        
+    </script>
+</body>
+</html>
