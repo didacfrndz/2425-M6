@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="miDiv">Contingut original</div>
+    <button id="boton">Canviar Contingut</button>
+    <script>
+        boton= document.querySelector('#boton').addEventListener('click',function(){
+            console.log('entro')
+            document.querySelector('#miDiv').innerHTML = "cambio mi contenido"
+            
+        })
+    </script>
+</body>
+</html>
