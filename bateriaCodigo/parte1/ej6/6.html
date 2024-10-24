@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="miElement">Aquest és l'element</div>
+    <button id="toggleClass">Canviar Classe</button>
+
+    <style>
+        .actiu {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        toggleButton = document.getElementById('toggleClass');
+miElement = document.getElementById('miElement');
+
+toggleButton.addEventListener('click', function() {
+    if(miElement.classList.toggle == 'actiu'){
+        miElement.classList.toggle('');
+    }else{
+        miElement.classList.toggle('actiu');
+    }
+});3
+    </script>
+</body>
+
+</html>

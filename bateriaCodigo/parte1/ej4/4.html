@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultat">Número aleatori: </div>
+    <button id="boton">Generar Número</button>
+    
+    <script>
+        boton = document.getElementById('boton');
+
+boton.addEventListener('click', function() {
+    var numeroRandom = Math.random() * 100;
+    numeroRandom = Math.floor(numeroRandom);
+
+    texto = document.getElementById('resultat');
+    texto.innerHTML = "Número aleatori: " + numeroRandom
+});
+    </script>
+</body>
+</html

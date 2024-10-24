@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="imatge" src="1.jpg" alt="Imatge inicial">
+    <button id="canviarImatge">Canviar Imatge</button>
+
+    <script>
+        cannviarImatge = document.getElementById('canviarImatge');
+
+cannviarImatge.addEventListener('click', function() {
+
+    var imatge = document.querySelector("img");
+
+    if (imatge.getAttribute('src') == '1.jpg') {
+        imatge.setAttribute('src', '2.jpg');
+    } else {
+        imatge.setAttribute('src', '1.jpg');
+    }
+});
+    </script>
+</body>
+</html>
