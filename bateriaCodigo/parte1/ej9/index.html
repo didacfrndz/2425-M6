@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultat"></div>
+    <button id="botonSuma">Sumar</button>
+    <script>
+        var numero1 = 5;
+var numero2 = 11;
+
+var suma = numero1 + numero2;
+
+botonSuma = document.getElementById('botonSuma');
+resultado = document.getElementById('resultat');
+
+botonSuma.addEventListener('click', function() {
+    resultado.innerHTML = "El resultado de suma de " + numero1 + " y " + numero2 + " es " + suma;
+})
+    </script>
+</body>
+</html>

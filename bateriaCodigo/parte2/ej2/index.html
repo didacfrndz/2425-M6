@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function determinarSigne(num) {
+    signe = Math.sign(num); 
+
+    if (signe == 1) {
+        return "es positivo";
+    } else if (signe == -1) {
+        return "es negativo";
+    } else {
+        return "es cero"
+    }
+}
+
+console.log(determinarSigne(-10)); // Retorna "El número és negatiu."
+console.log(determinarSigne(0));   // Retorna "El número és zero."
+console.log(determinarSigne(7));   // Retorna "El número és positiu."
+    </script>
+</body>
+</html>
