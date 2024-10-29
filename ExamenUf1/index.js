@@ -49,6 +49,15 @@ let arrayLibros = [
     const fechaFormateada = `${dia}/${mes}/${anio}`; //Lo aplica todo en una variable
 
 
+//Generacion de la tabla
+     for(i=0; i < arrayLibros.length;i++){
+            document.querySelector("#lineaTabla"). innerHTML += `<div class="row" id="lineaTabla">
+                    <div class="col" id="tablaTitulo">`+ arrayLibros[i].titulo +`</div>
+                    <div class="col" id="tablaAutor">`+arrayLibros[i].autor+ `</div>
+                    <div class="col" id="tablaGenero">`+ arrayLibros[i].genero+`</div>
+                    <div class="col" id="tablaPubli">`+ arrayLibros[i].anyo +`</div>
+                </div>`;
+    };
 //Boton de reserva
     document.querySelector("#reserva").addEventListener('click',function(){
         let seleccion = document.getElementById("select").value //Agarra el valor de la seleccion que tenemos en el selector
